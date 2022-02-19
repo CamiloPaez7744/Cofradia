@@ -452,6 +452,31 @@ section {
   }
 }
 
+
+/*--------------------------------------------------------------
+# Carousel Section
+--------------------------------------------------------------*/
+.carousel {
+  margin-top: 80px;
+  
+}
+.carousel-item {
+  height:32rem;
+  background:#777777;
+  color:white;
+  position: relative;
+}
+.carousel-item .container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Index Page
 --------------------------------------------------------------*/
