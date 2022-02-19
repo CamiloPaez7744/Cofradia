@@ -502,45 +502,86 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Values
+# mision
 --------------------------------------------------------------*/
-.values .box {
+.mision .box {
   padding: 30px;
   box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
   text-align: center;
   transition: 0.3s;
   height: 100%;
 }
-.values .box img {
+.mision .box img {
   padding: 30px 50px;
   transition: 0.5s;
   transform: scale(1.1);
 }
-.values .box h3 {
+.mision .box h3 {
   font-size: 24px;
   color: #012970;
   font-weight: 700;
   margin-bottom: 18px;
 }
-.values .box:hover {
+.mision .box:hover {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
 }
-.values .box:hover img {
+.mision .box:hover img {
   transform: scale(1);
 }
-.values .tab-content h4 {
-  font-size: 18px;
+.mision .tab-content h4 {
+  font-size: 20px;
+  text-align: justify;
   margin: 0;
   font-weight: 700;
   color: #012970;
 }
-.values .tab-content i {
+.mision .tab-content i {
   font-size: 24px;
   line-height: 0;
   margin-right: 8px;
   color: #4154f1;
 }
 
+/*--------------------------------------------------------------
+# vision
+--------------------------------------------------------------*/
+.vision .box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+}
+.vision .box img {
+  padding: 30px 50px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.vision .box h3 {
+  font-size: 24px;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.vision .box:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+.vision .box:hover img {
+  transform: scale(1);
+}
+.vision .tab-content h4 {
+  font-size: 20px;
+  text-align: justify;
+  margin: 0;
+  font-weight: 700;
+  color: #012970;
+}
+.vision .tab-content i {
+  font-size: 24px;
+  line-height: 0;
+  margin-right: 8px;
+  color: #4154f1;
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
