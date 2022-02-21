@@ -1,10 +1,3 @@
-/**
-* Template Name: FlexStart - v1.9.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -457,14 +450,18 @@ section {
 # Carousel Section
 --------------------------------------------------------------*/
 .carousel {
-  margin-top: 80px;
-  
+  width: 100%;
+  height: 100vh;
 }
 .carousel-item {
-  height:32rem;
-  background:#777777;
+  height:34rem;
+  background:#193153;
   color:white;
   position: relative;
+}
+.carousel-item .img-house {
+  display: flex;
+  align-items: center;
 }
 .carousel-item .container {
   position: absolute;
@@ -473,6 +470,80 @@ section {
   right: 0;
   padding-bottom: 50px;
 }
+.carousel h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+.carousel h2 {
+  color: #B2BAC5;
+  margin: 15px 0 0 0;
+  font-size: 26px;
+}
+.carousel .btn-know-us {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #0D6EFD;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+.carousel .btn-know-us span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.carousel .btn-know-us i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.carousel .btn-know-us:hover i {
+  transform: translateX(5px);
+}
+.carousel .carousel-img {
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  .carousel {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 991px) {
+  .carousel {
+    height: auto;
+    padding: 120px 0 60px 0;
+  }
+  .carousel .carousel-img {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .carousel .carousel-img img {
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .carousel {
+    text-align: center;
+  }
+  .carousel h1 {
+    font-size: 32px;
+  }
+  .carousel h2 {
+    font-size: 24px;
+  }
+  .carousel .carousel-img img {
+    width: 20%;
+  }
+}.carousel {
+  margin-top: 80px;
+  
+}
+
 
 
 
