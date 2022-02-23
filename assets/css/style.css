@@ -796,7 +796,6 @@ section {
   width: 265px;
   height: 265px;
   top: -50px;
-  left: 10px;
   z-index: 1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
