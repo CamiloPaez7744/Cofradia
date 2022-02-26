@@ -442,6 +442,14 @@ section {
   padding-top: 80px;
 }
 
+.carousel-inner {
+  height: 35rem;
+  color: white;
+  position: relative;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
 .carousel-item {
   height: 35rem;
   color: white;
@@ -460,7 +468,7 @@ section {
 
 .carousel p {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 00;
 }
 
 .carousel h1 {
@@ -509,6 +517,11 @@ section {
 
 .carousel .btn-know-us:hover i {
   transform: translateX(5px);
+}
+
+.carousel .photos {
+  width: 400px;
+  border-radius: 50%;
 }
 
 .carousel .carousel-img {
