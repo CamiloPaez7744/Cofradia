@@ -4,7 +4,6 @@
 :root {
   scroll-behavior: smooth;
 }
-
 header body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -243,21 +242,6 @@ section {
   color: #4154f1;
 }
 
-.navbar .getstarted,
-.navbar .getstarted:focus {
-  background: #4154f1;
-  padding: 8px 20px;
-  margin-left: 30px;
-  border-radius: 4px;
-  color: #fff;
-}
-
-.navbar .getstarted:hover,
-.navbar .getstarted:focus:hover {
-  color: #fff;
-  background: #E92556;
-}
-
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -268,8 +252,8 @@ section {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 40px rgba(145, 183, 217, 0.25);
   transition: 0.3s;
   border-radius: 4px;
 }
@@ -481,14 +465,13 @@ section {
 .carousel h2 {
   color: #B2BAC5;
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .carousel .cursiva {
   color: #fafbff;
   margin: 15px 0 0 0;
-  font-size: 45px;
-  font-style: italic;
+  font-style: oblique;
 }
 
 .carousel .btn-know-us {
@@ -519,11 +502,6 @@ section {
   transform: translateX(5px);
 }
 
-.carousel .photos {
-  width: 400px;
-  border-radius: 50%;
-}
-
 .carousel .carousel-img {
   text-align: right;
 }
@@ -538,7 +516,7 @@ section {
 
 @media (min-width: 1024px) {
   .carousel .cursiva {
-    font-size: 40px;
+    font-size: 30px;
   }
   .carousel h1 {
     font-size: 50px;
@@ -605,6 +583,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  background: no-repeat center center scroll;
+  background-size: cover;
+  box-shadow: 0 0 20px rgba(65, 84, 241, 0.3);
+}
 .about .content {
   background-color: #f6f9ff;
   padding: 40px;
@@ -635,7 +618,7 @@ section {
   transition: 0.5s;
   color: #fff;
   background: #E92556;
-  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+  box-shadow: 0px 5px 25px rgba(167, 207, 242, 0.3);
 }
 
 .about .btn-read-more span {
@@ -697,6 +680,11 @@ section {
 /*--------------------------------------------------------------
 # vision
 --------------------------------------------------------------*/
+.vision{
+  background: no-repeat center center scroll;
+  background-size: cover;
+  box-shadow: 0px 5px 25px rgba(167, 207, 242, 0.3);
+}
 .vision .caja {
   display: flex;
   flex-direction: column;
@@ -716,6 +704,18 @@ section {
   margin-right: 8px;
   color: #4154f1;
 }
+
+.vision .picture {
+  transition: 0.1s ease;
+}
+
+.vision .picture:hover {
+  opacity: 0.9;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.7s ease;
+}
 @media (max-width: 991px) {
   .vision .tab-content h4 {
     margin-bottom: 25px;
@@ -729,6 +729,10 @@ section {
 /*--------------------------------------------------------------
 # house
 --------------------------------------------------------------*/
+.house{
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
 .house .post-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
@@ -745,6 +749,13 @@ section {
   overflow: hidden;
   margin: -30px -30px 15px -30px;
   position: relative;
+  height: 230px;
+}
+@supports(object-fit: cover){
+  .house .post-box .post-img{
+    object-fit: cover;
+    object-position: center center;
+  }
 }
 
 .house .post-box .post-img img {
@@ -787,12 +798,26 @@ section {
 }
 
 .house .post-box:hover .post-img img {
-  transform: rotate(6deg) scale(1.2);
+  transform: scale(1.2);
 }
-
+@media (max-width: 991px) {
+  .house .post-box .post-img {
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .house .post-box .post-img {
+    height: auto;
+  }
+}
 /*--------------------------------------------------------------
 # missions
 --------------------------------------------------------------*/
+.missions {
+  background: no-repeat center center scroll;
+  background-size: cover;  
+  box-shadow: 0px 5px 25px rgba(167, 207, 242, 0.3);
+}
 .missions .container-card {
   position: relative;
   width: 100%;
@@ -805,10 +830,10 @@ section {
 .missions .container-card .card {
   position: relative;
   max-width: 410px;
-  height: 315px;
+  height: 275px;
   background: #fff;
   margin: 30px 10px;
-  padding: 20px 15px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -819,6 +844,7 @@ section {
 }
 .missions .container-card .card .imgBx {
   position: relative;
+  display: inline-block;
   width: 265px;
   height: 265px;
   top: -50px;
@@ -847,7 +873,18 @@ section {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
+.missions .container-card .card .content2 {
+  position: absolute;
+  margin-top: -40px;
+  padding: 10px 15px;
+  text-align: center;
+}
 .missions .container-card .card .content h2{
+  font-size: 24px;
+  color: #012970;
+  font-weight: 700;
+}
+.missions .container-card .card .content2 h2{
   font-size: 24px;
   color: #012970;
   font-weight: 700;
@@ -860,6 +897,12 @@ section {
 .missions .container-card .card:hover .content {
   visibility: visible;
   opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+.missions .container-card .card:hover .content2 {
+  visibility: visible;
+  opacity: 0;
   margin-top: -40px;
   transition-delay: 0.3s;
 }
@@ -1636,134 +1679,6 @@ section {
     transform: scale(1.12);
   }
 }
-
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team {
-  background: #fff;
-  padding: 60px 0;
-}
-
-.team .member {
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  transition: 0.3s;
-}
-
-.team .member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.team .member .member-img:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background: url(../img/team-shape.svg) no-repeat center bottom;
-  background-size: contain;
-  z-index: 1;
-}
-
-.team .member .social {
-  position: absolute;
-  right: -100%;
-  top: 30px;
-  opacity: 0;
-  border-radius: 4px;
-  transition: 0.5s;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 2;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: rgba(1, 41, 112, 0.5);
-  margin: 15px 12px;
-  display: block;
-  line-height: 0;
-  text-align: center;
-}
-
-.team .member .social a:hover {
-  color: rgba(1, 41, 112, 0.8);
-}
-
-.team .member .social i {
-  font-size: 18px;
-}
-
-.team .member .member-info {
-  padding: 10px 15px 20px 15px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #012970;
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  padding-top: 15px;
-  line-height: 26px;
-  color: #5e5e5e;
-}
-
-.team .member:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-}
-
-.team .member:hover .social {
-  right: 8px;
-  opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients .clients-slider .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-.clients .clients-slider .swiper-slide img:hover {
-  opacity: 1;
-}
-
-.clients .clients-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.clients .clients-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #4154f1;
-}
-
-.clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
-}
-
 /*--------------------------------------------------------------
 # Recent Blog Posts
 --------------------------------------------------------------*/
@@ -1831,10 +1746,17 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background: no-repeat center center scroll;
+  background-size: cover;
+  box-shadow: 0px 5px 25px rgba(167, 207, 242, 0.5);
+}
+
 .contact .info-box {
   color: #444444;
-  background: #fafbff;
+  background-color: rgba(255, 255, 255, .3);
   padding: 30px;
+  border-radius: 10px;
 }
 
 .contact .info-box i {
@@ -2570,7 +2492,7 @@ section {
 }
 
 .footer .footer-top .social-links a {
-  font-size: 20px;
+  font-size: 40px;
   display: inline-block;
   color: rgba(1, 41, 112, 0.5);
   line-height: 0;
