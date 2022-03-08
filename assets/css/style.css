@@ -763,21 +763,22 @@ section {
   transition: 0.5s;
 }
 
-.house .post-box .post-date {
-  font-size: 16px;
-  font-weight: 600;
+.house .post-box .post-title {
+  font-size: 24px;
+  font-weight: 700;
   color: rgba(1, 41, 112, 0.6);
   display: block;
   margin-bottom: 10px;
 }
 
-.house .post-box .post-title {
+.house .post-box .post-content {
   font-size: 24px;
   color: #012970;
-  font-weight: 700;
+  font-weight: 650;
   margin-bottom: 18px;
   position: relative;
   transition: 0.3s;
+  text-align: justify;
 }
 
 .house .post-box .readmore {
@@ -791,10 +792,10 @@ section {
 .house .post-box .readmore i {
   line-height: 0;
   margin-left: 4px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.house .post-box:hover .post-title {
+.house .post-box:hover .post-content {
   color: #4154f1;
 }
 
@@ -1928,7 +1929,7 @@ section {
 }
 
 .houses .entry .entry-title {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
   padding: 0;
   margin: 0 0 20px 0;
@@ -1941,6 +1942,8 @@ section {
 
 .houses .entry .entry-content p {
   line-height: 28px;
+  font-weight: 500;
+  font-size: 18px;
 }
 /*--------------------------------------------------------------
 # Blog
