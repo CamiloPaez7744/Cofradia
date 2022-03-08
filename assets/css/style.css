@@ -750,6 +750,7 @@ section {
   margin: -30px -30px 15px -30px;
   position: relative;
   height: 230px;
+  width: 125%;
 }
 @supports(object-fit: cover){
   .house .post-box .post-img{
@@ -800,14 +801,35 @@ section {
 .house .post-box:hover .post-img img {
   transform: scale(1.2);
 }
+@media (max-width: 1024px) {
+  .house .post-box .post-img {
+    height: auto;
+    width: 130%;
+  }
+  @supports(object-fit: cover){
+    .house .post-box .post-img{
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+}
 @media (max-width: 991px) {
   .house .post-box .post-img {
     height: auto;
+    max-width: 150%;
+  }
+  @supports(object-fit: cover){
+    .house .post-box .post-img{
+      height: 85%;
+      object-fit: cover;
+      object-position: center center;
+    }
   }
 }
 @media (max-width: 768px) {
   .house .post-box .post-img {
     height: auto;
+    width: 120%;
   }
 }
 /*--------------------------------------------------------------
@@ -1879,14 +1901,55 @@ section {
     transform: rotate(360deg);
   }
 }
+/*--------------------------------------------------------------
+# House page
+--------------------------------------------------------------*/
+.houses {
+  padding: 40px 0 20px 0;
+}
+.houses .entries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 11px;
+}
+.houses .entry {
+  padding: 30px;
+  margin-bottom: 60px;
+  border-radius: 11px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
 
+.houses .entry .entry-img {
+  max-height: 440px;
+  margin: -30px -30px 20px -30px;
+  overflow: hidden;
+}
+
+.houses .entry .entry-title {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.houses .entry .entry-title p {
+  color: #012970;
+  transition: 0.3s;
+}
+
+.houses .entry .entry-content p {
+  line-height: 28px;
+}
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
 .blog {
   padding: 40px 0 20px 0;
 }
+.blog row{
 
+}
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
