@@ -127,7 +127,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: #1F64BF;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -141,7 +141,7 @@ section {
 }
 
 .back-to-top:hover {
-  background: #E92556;
+  background: #0C2240;
   color: #fff;
 }
 
@@ -516,10 +516,10 @@ section {
 
 @media (min-width: 1024px) {
   .carousel .cursiva {
-    font-size: 30px;
+    font-size: 35px;
   }
   .carousel h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .carousel h2 {
     font-size: 30px;
@@ -527,9 +527,13 @@ section {
 }
 
 @media (max-width: 991px) {
-  .carousel-item .container {
-    align-content: initial;
-    justify-content: center;
+  .carousel .container {
+    position: relative;
+    margin-top: 10%;
+  }
+  .carousel .row {
+    flex-direction: row;
+    justify-content: space-between;
   }
   .carousel .cursiva {
     font-size: 30px;
@@ -540,19 +544,34 @@ section {
   .carousel h2 {
     font-size: 22px;
   }
+  .carousel .btn-know-us {
+    margin-top: 20px;
+    margin-left: -140px;
+  }
   .carousel .btn-know-us i {
-    margin-left: 5px;
     font-size: 18px;
     transition: 0.3s;
   }
   .carousel .cofradia-img {
     width: 50%;
   }
+  .carousel-control-prev {
+    padding-top: 80px;
+    width: 5%;
+  }
+  .carousel-control-next {
+    padding-top: 80px;
+    width: 5%;
+  }
 }
 
 @media (max-width: 768px) {
   .carousel {
     text-align: center;
+    height: 100%;
+  }
+  .carousel-item {
+    height: 40rem;
   }
 
   .carousel h1 {
@@ -566,14 +585,13 @@ section {
   .carousel h2 {
     font-size: 22px;
   }
-
-  .carousel .carousel-img img {
-    width: 35%;
+  .carousel .btn-know-us {
+    margin-top: 20px;
+    margin-left: auto;
   }
-
-  .escudo {
-    width: 80%;
-    margin-top: 10%;
+  .carousel .cofradia-img {
+    width: 50%;
+    margin-top: 20px;
   }
 }
 
@@ -852,7 +870,7 @@ section {
 }
 .missions .container-card .card {
   position: relative;
-  max-width: 410px;
+  max-width: 285px;
   height: 275px;
   background: #fff;
   margin: 30px 10px;
@@ -863,7 +881,7 @@ section {
   transition: 0.3s ease-in-out;
 }
 .missions .container-card .card:hover {
-  height: 450px;
+  height: 470px;
 }
 .missions .container-card .card .imgBx {
   position: relative;
