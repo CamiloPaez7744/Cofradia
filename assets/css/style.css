@@ -4,6 +4,7 @@
 :root {
   scroll-behavior: smooth;
 }
+
 header body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -505,10 +506,12 @@ section {
 .carousel .carousel-img {
   text-align: right;
 }
+
 .carousel-control-prev {
   padding-top: 80px;
   width: 100px;
 }
+
 .carousel-control-next {
   padding-top: 80px;
   width: 100px;
@@ -518,9 +521,11 @@ section {
   .carousel .cursiva {
     font-size: 35px;
   }
+
   .carousel h1 {
     font-size: 45px;
   }
+
   .carousel h2 {
     font-size: 30px;
   }
@@ -531,34 +536,43 @@ section {
     position: relative;
     margin-top: 10%;
   }
+
   .carousel .row {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .carousel .cursiva {
     font-size: 30px;
   }
+
   .carousel h1 {
     font-size: 42px;
   }
+
   .carousel h2 {
     font-size: 22px;
   }
+
   .carousel .btn-know-us {
     margin-top: 20px;
     margin-left: -140px;
   }
+
   .carousel .btn-know-us i {
     font-size: 18px;
     transition: 0.3s;
   }
+
   .carousel .cofradia-img {
     width: 50%;
   }
+
   .carousel-control-prev {
     padding-top: 80px;
     width: 5%;
   }
+
   .carousel-control-next {
     padding-top: 80px;
     width: 5%;
@@ -570,6 +584,7 @@ section {
     text-align: center;
     height: 100%;
   }
+
   .carousel-item {
     height: 40rem;
   }
@@ -585,10 +600,12 @@ section {
   .carousel h2 {
     font-size: 22px;
   }
+
   .carousel .btn-know-us {
     margin-top: 20px;
     margin-left: auto;
   }
+
   .carousel .cofradia-img {
     width: 50%;
     margin-top: 20px;
@@ -606,6 +623,7 @@ section {
   background-size: cover;
   box-shadow: 0 0 20px rgba(65, 84, 241, 0.3);
 }
+
 .about .content {
   background-color: #f6f9ff;
   padding: 40px;
@@ -698,16 +716,18 @@ section {
 /*--------------------------------------------------------------
 # vision
 --------------------------------------------------------------*/
-.vision{
+.vision {
   background: no-repeat center center scroll;
   background-size: cover;
   box-shadow: 0px 5px 25px rgba(167, 207, 242, 0.3);
 }
+
 .vision .caja {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .vision .tab-content h4 {
   font-size: 20px;
   text-align: justify;
@@ -716,6 +736,7 @@ section {
   font-weight: 700;
   color: #012970;
 }
+
 .vision .tab-content i {
   font-size: 24px;
   line-height: 0;
@@ -734,23 +755,27 @@ section {
   transform: scale(1.1);
   transition: 0.7s ease;
 }
+
 @media (max-width: 991px) {
   .vision .tab-content h4 {
     margin-bottom: 25px;
   }
 }
+
 @media (max-width: 768px) {
   .vision .tab-content h4 {
     margin-bottom: 30px;
   }
 }
+
 /*--------------------------------------------------------------
 # house
 --------------------------------------------------------------*/
-.house{
+.house {
   background: no-repeat center center scroll;
   background-size: cover;
 }
+
 .house .post-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
@@ -770,8 +795,9 @@ section {
   height: 230px;
   width: 125%;
 }
-@supports(object-fit: cover){
-  .house .post-box .post-img{
+
+@supports(object-fit: cover) {
+  .house .post-box .post-img {
     object-fit: cover;
     object-position: center center;
   }
@@ -820,45 +846,52 @@ section {
 .house .post-box:hover .post-img img {
   transform: scale(1.2);
 }
+
 @media (max-width: 1024px) {
   .house .post-box .post-img {
     height: auto;
     width: 130%;
   }
-  @supports(object-fit: cover){
-    .house .post-box .post-img{
+
+  @supports(object-fit: cover) {
+    .house .post-box .post-img {
       object-fit: cover;
       object-position: center center;
     }
   }
 }
+
 @media (max-width: 991px) {
   .house .post-box .post-img {
     height: auto;
     max-width: 150%;
   }
-  @supports(object-fit: cover){
-    .house .post-box .post-img{
+
+  @supports(object-fit: cover) {
+    .house .post-box .post-img {
       height: 85%;
       object-fit: cover;
       object-position: center center;
     }
   }
 }
+
 @media (max-width: 768px) {
   .house .post-box .post-img {
     height: auto;
     width: 120%;
   }
 }
+
 /*--------------------------------------------------------------
 # missions
 --------------------------------------------------------------*/
 .missions {
   background: no-repeat center center scroll;
-  background-size: cover;  
+  background-size: cover;
   box-shadow: 0px 5px 25px rgba(167, 207, 242, 0.3);
 }
+
 .missions .container-card {
   position: relative;
   width: 100%;
@@ -868,6 +901,7 @@ section {
   flex-wrap: wrap;
   padding: 45px;
 }
+
 .missions .container-card .card {
   position: relative;
   max-width: 285px;
@@ -879,10 +913,13 @@ section {
   flex-direction: column;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
+
 .missions .container-card .card:hover {
-  height: 470px;
+  height: 550px;
 }
+
 .missions .container-card .card .imgBx {
   position: relative;
   display: inline-block;
@@ -892,18 +929,43 @@ section {
   z-index: 1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
+
 .missions .container-card .card .imgBx img {
   width: 100%;
   height: auto;
   border-radius: 4px;
 }
-@supports(object-fit: cover){
-  .missions .container-card .card .imgBx img{
+
+@supports(object-fit: cover) {
+  .missions .container-card .card .imgBx img {
     height: 100%;
     object-fit: cover;
     object-position: center center;
   }
 }
+
+.missions .container-card .card .imgBx h2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgba(242, 242, 242, 0.9);
+  background: rgba(12, 34, 64, 0.5);
+  visibility: visible;
+  opacity: 1;
+  text-align: center;
+  transition-delay: 0.3s;
+}
+
+.missions .container-card .card:hover .imgBx h2 {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
 .missions .container-card .card .content {
   position: relative;
   margin-top: -140px;
@@ -914,39 +976,28 @@ section {
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-.missions .container-card .card .content2 {
-  position: absolute;
-  margin-top: -40px;
-  padding: 10px 15px;
-  text-align: center;
-}
-.missions .container-card .card .content h2{
+
+.missions .container-card .card .content h2 {
   font-size: 24px;
   color: #012970;
   font-weight: 700;
 }
-.missions .container-card .card .content2 h2{
-  font-size: 24px;
-  color: #012970;
-  font-weight: 700;
-}
+
 .missions .container-card .card .content p {
   font-size: 16px;
   font-weight: 600;
+  line-height: 20px;
+  text-align: justify;
   color: rgba(1, 41, 112, 0.6);
 }
+
 .missions .container-card .card:hover .content {
   visibility: visible;
   opacity: 1;
   margin-top: -40px;
   transition-delay: 0.3s;
 }
-.missions .container-card .card:hover .content2 {
-  visibility: visible;
-  opacity: 0;
-  margin-top: -40px;
-  transition-delay: 0.3s;
-}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -1720,6 +1771,7 @@ section {
     transform: scale(1.12);
   }
 }
+
 /*--------------------------------------------------------------
 # Recent Blog Posts
 --------------------------------------------------------------*/
@@ -1787,7 +1839,7 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact{
+.contact {
   background: no-repeat center center scroll;
   background-size: cover;
   box-shadow: 0px 5px 25px rgba(167, 207, 242, 0.5);
@@ -1921,18 +1973,21 @@ section {
     transform: rotate(360deg);
   }
 }
+
 /*--------------------------------------------------------------
 # House page
 --------------------------------------------------------------*/
 .houses {
   padding: 40px 0 20px 0;
 }
+
 .houses .entries {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 11px;
 }
+
 .houses .entry {
   padding: 30px;
   margin-bottom: 60px;
@@ -1963,15 +2018,16 @@ section {
   font-weight: 500;
   font-size: 18px;
 }
+
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
 .blog {
   padding: 40px 0 20px 0;
 }
-.blog row{
 
-}
+.blog row {}
+
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
