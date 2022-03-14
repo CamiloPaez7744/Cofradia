@@ -636,6 +636,10 @@ section {
   text-transform: uppercase;
 }
 
+.about img {
+  border-radius: 10px;
+}
+
 .about h2 {
   font-size: 24px;
   font-weight: 700;
@@ -746,6 +750,10 @@ section {
 
 .vision .picture {
   transition: 0.1s ease;
+}
+
+.vision .picture img{
+  border-radius: 10px;
 }
 
 .vision .picture:hover {
@@ -1505,6 +1513,7 @@ section {
 
 .galery .galery-wrap img {
   transition: 1s;
+  border-radius: 10px;
 }
 
 .galery .galery-wrap .galery-info {
